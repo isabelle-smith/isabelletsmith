@@ -1,0 +1,30 @@
+
+/* ~ ~ ~ ~ ~ ~ ~ MEDIUM WIDE SCREEN ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    div.tocify {
+        width: 23%;
+    }
+
+    .toc-content {
+        padding-left: 0px;
+    }
+
+    .col-sm-4 {
+        width: 30%;
+    }
+
+    .col-sm-8{
+        width: 70%;
+    }
+}
+}
+
+/* ~ ~ ~ ~ ~ ~ ~ VERY WIDE SCREEN ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ */
+
+@media (min-width: 992px) {
+    .col-md-3 {
+        width: 25%;
+    }
+}
+

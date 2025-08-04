@@ -1,0 +1,8 @@
+bibentry(
+  bibtype       = "misc",
+  title         = "{isabelletsmith}: useful functions, by (and for) Izzy",
+  author        = "Isabelle T. Smith",
+  year          = 2025,
+  howpublished  = "\url{https://github.com/isabelle-smith/}",
+  number        = "0.0.0.9000"
+)

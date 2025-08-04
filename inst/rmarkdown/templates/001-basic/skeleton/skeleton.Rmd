@@ -1,0 +1,26 @@
+---
+title: "Untitled"
+author: "Isabelle Smith"
+date: "`r format(Sys.Date(), '%b %d %Y')`"
+output: html_document
+---
+
+&nbsp;
+
+
+
+## Section
+
+```{r chunk-name}
+
+## code
+
+```
+
+
+
+## Sources
+
+- https://bookdown.org/yihui/rmarkdown/document-templates.html
+- https://github.com/dr-harper/example-rmd-templates/tree/master/inst/rmarkdown/templates
+
