@@ -4,7 +4,7 @@
 #### 001-basic  
 - *basics 1*  
   - https://bookdown.org/yihui/rmarkdown/document-templates.html  
-- *basics 2**  
+- *basics 2*  
   - https://github.com/dr-harper/example-rmd-templates/tree/master/inst/rmarkdown/templates  
 
 
