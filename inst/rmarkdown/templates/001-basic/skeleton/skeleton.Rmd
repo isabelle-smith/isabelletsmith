@@ -18,9 +18,3 @@ output: html_document
 ```
 
 
-
-## Sources
-
-- https://bookdown.org/yihui/rmarkdown/document-templates.html
-- https://github.com/dr-harper/example-rmd-templates/tree/master/inst/rmarkdown/templates
-

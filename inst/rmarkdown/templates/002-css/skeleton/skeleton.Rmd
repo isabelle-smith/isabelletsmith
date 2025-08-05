@@ -1,7 +1,7 @@
 ---
 title: "Untitled"
 author: "Isabelle Smith"
-date: "<em>Created:</em> dd mm yyyy <br> <em>Updated:</em> `r format(Sys.Date(), '%d %b %Y')`"
+date: "<em>Created:</em> `r format(file.info(knitr::current_input())$ctime, '%d %b %Y')` <br> <em>Updated:</em> `r format(Sys.Date(), '%d %b %Y')`"
 abstract: ""
 output:
   html_document:
