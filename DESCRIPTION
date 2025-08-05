@@ -4,7 +4,7 @@ Version: 0.0.0.9000
 Authors@R: 
     person("Isabelle", "Smith",
     "isabellesmith.isabellesmith@gmail.com",
-    comment = c(ORCID = "0009-0001-8487-9782")
+    comment = c(ORCID = "0009-0001-8487-9782"),
     role = c("aut", "cre"))
 Description: Simple templates (currently) and functions (to come). Made to be used for RMD files in RStudio.
 Imports: 
