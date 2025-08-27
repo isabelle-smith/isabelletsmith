@@ -36,8 +36,8 @@ newline <- "\n"
 
 ```{r chunk_name_1}
 
-iprint("Hello")
-iprint("World", newline_end=FALSE)
+iprint("Hello: ", newline=FALSE)
+iprint("World")
 
 ```
 
