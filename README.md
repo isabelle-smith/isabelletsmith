@@ -1,4 +1,4 @@
-
+## Installing Package  
 `devtools::install_github("isabelle-smith/isabelletsmith")`
 
 
