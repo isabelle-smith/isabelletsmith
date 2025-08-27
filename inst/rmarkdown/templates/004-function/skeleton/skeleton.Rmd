@@ -1,0 +1,54 @@
+---
+title: "TITLE"
+author: "Isabelle Smith"
+date: "<em>Created:</em> `r format(file.info(knitr::current_input())$ctime, '%d %b %Y')` <br> <em>Generated:</em> `r format(Sys.Date(), '%d %b %Y')`"
+abstract: ""
+output:
+  html_document:
+    toc: TRUE
+    toc_float: TRUE
+    toc_depth: 4
+    code_folding: hide
+    css: Izzy-Files/styles.css
+    template: Izzy-Files/default.html
+---
+
+```{r setup, warning=FALSE}
+
+
+knitr::opts_chunk$set(warning=FALSE)
+
+
+suppressPackageStartupMessages(library(tidyverse))
+
+
+newline <- "\n"
+
+
+```
+
+
+&nbsp;
+
+
+
+## Section 1
+
+```{r chunk_name_1}
+
+iprint("Hello")
+iprint("World", newline_end=FALSE)
+
+```
+
+
+
+## Section 2
+
+```{r chunk_name_2}
+
+## more code
+
+```
+
+
