@@ -2,6 +2,11 @@
 `devtools::install_github("isabelle-smith/isabelletsmith")`
 
 
+
+&nbsp;  
+
+
+
 ## Template Sources  
 
 #### 001-basic  
@@ -32,3 +37,16 @@
 #### 004-function  
 - *roxygen documentation*  
   - https://r-pkgs.org/man.html  
+
+
+
+&nbsp;  
+
+
+
+## Function Sources  
+
+#### iprint  
+- *cat()*  
+  - https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/cat
+
