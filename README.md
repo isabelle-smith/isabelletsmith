@@ -1,4 +1,7 @@
 
+`devtools::install_github("isabelle-smith/isabelletsmith")`
+
+
 ## Template Sources  
 
 #### 001-basic  
@@ -23,4 +26,9 @@
 
 #### 003-files  
 - *created: date*  
-  - https://stackoverflow.com/a/56439136  
+  - https://stackoverflow.com/a/56439136
+
+
+#### 004-function  
+- *roxygen documentation*  
+  - https://r-pkgs.org/man.html  
