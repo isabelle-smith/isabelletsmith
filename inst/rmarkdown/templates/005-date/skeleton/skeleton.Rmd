@@ -1,7 +1,9 @@
 ---
 title: "TITLE"
 author: "Isabelle Smith"
-date: "<em>Created:</em> `r format(file.info(knitr::current_input())$ctime, '%d %b %Y')` <br> <em>Generated:</em> `r format(Sys.Date(), '%d %b %Y')`"
+date:  |+ 
+  <em>Created:</em> `r format(file.info(knitr::current_input())$ctime, '%d %b %Y')`  
+  <em>Generated:</em> `r format(Sys.Date(), '%d %b %Y')`
 abstract: ""
 output:
   html_document:
@@ -40,8 +42,10 @@ newline <- "\n"
 
 ```{r chunk_name_1}
 
+
 iprint("Hello: ", newline=FALSE)
 iprint("World")
+
 
 ```
 
@@ -51,7 +55,29 @@ iprint("World")
 
 ```{r chunk_name_2}
 
+
 ## more code
+
+
+```
+
+
+
+
+
+
+
+\newpage
+
+
+
+## SCRATCH
+
+```{r SCRATCH-chunk, eval=FALSE}
+
+
+## ...
+
 
 ```
 
