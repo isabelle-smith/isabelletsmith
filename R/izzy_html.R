@@ -15,7 +15,7 @@
 #' those and any additional args into [rmarkdown::html_document()].
 #'
 #'
-#' @param default string.
+#' @param default_name string. Name of HTML template, if not "default".
 #' @param toc logical. Whether or not to include table of contents.
 #' @param toc_depth integer. Number of heading levels to include in table of contents.
 #' @param ... other arguments to be passed to [rmarkdown::html_document()].
@@ -42,14 +42,14 @@
 # --------------------------------------
 
 
-izzy_html = function(default="default", toc=TRUE, toc_depth=4, ...) {
+izzy_html = function(default_name="default", toc=TRUE, toc_depth=4, ...) {
 
 
   # locations of resource files in the package
   css       = system.file("Izzy-Files/styles.css",
                          package = "isabelletsmith")
 
-  template  = system.file(paste0("Izzy-Files/", default, ".html"),
+  default       = system.file(paste0("Izzy-Files/", default_name, ".html"),
                          package = "isabelletsmith")
 
 
@@ -58,7 +58,7 @@ izzy_html = function(default="default", toc=TRUE, toc_depth=4, ...) {
   rmarkdown::html_document(toc           = toc,
                            toc_depth     = toc_depth,
                            css           = css,
-                           template      = template,
+                           template      = default,
                            ...)
 
 

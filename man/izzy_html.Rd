@@ -4,10 +4,10 @@
 \alias{izzy_html}
 \title{HTML Rendering for package \code{isabelletsmith}}
 \usage{
-izzy_html(default = "default", toc = TRUE, toc_depth = 4, ...)
+izzy_html(default_name = "default", toc = TRUE, toc_depth = 4, ...)
 }
 \arguments{
-\item{default}{string.}
+\item{default_name}{string. Name of HTML template, if not "default".}
 
 \item{toc}{logical. Whether or not to include table of contents.}
 
