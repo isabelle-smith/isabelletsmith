@@ -7,7 +7,7 @@
 iprint(..., newline = TRUE)
 }
 \arguments{
-\item{...}{R object(s)}
+\item{...}{R object(s).}
 
 \item{newline}{logical. Whether or not to go to a
 new line at the end of printing; defaults to \code{TRUE}.}
@@ -29,6 +29,7 @@ printing to the console (even if you don't want spaces).
 ## default (newline=TRUE)
 iprint(c("a","b","c"))
 iprint(c("x","y","z"))
+
 ## no return at the end
 iprint(c("a","b","c"), newline=FALSE)
 iprint(c("x","y","z"), newline=FALSE)

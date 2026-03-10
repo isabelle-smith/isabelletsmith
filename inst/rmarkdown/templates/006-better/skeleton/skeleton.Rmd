@@ -1,16 +1,14 @@
 ---
 title: "TITLE"
 author: "Isabelle Smith"
-date: "<em>Created:</em> `r format(file.info(knitr::current_input())$ctime, '%d %b %Y')` <br> <em>Generated:</em> `r format(Sys.Date(), '%d %b %Y')`"
+date:  |+ 
+  <em>Created:</em> DD mmm YYYY  
+  <em>Generated:</em> `r format(Sys.Date(), '%d %b %Y')`
 abstract: ""
 output:
-  html_document:
-    toc: TRUE
-    toc_float: TRUE
-    toc_depth: 4
+  isabelletsmith::izzy_html:
+    template: "006-default"
     code_folding: hide
-    css: Izzy-Files/styles.css
-    template: Izzy-Files/004-default.html
 ---
 
 ```{r setup, warning=FALSE}
@@ -19,7 +17,10 @@ output:
 knitr::opts_chunk$set(warning=FALSE)
 
 
-## devtools::install_github("isabelle-smith/isabelletsmith", quiet=TRUE)
+if (!"isabelletsmith" %in% installed.packages()) {
+  devtools::install_github("isabelle-smith/isabelletsmith", quiet=TRUE)
+}
+
 library(isabelletsmith)
 
 
@@ -27,6 +28,7 @@ suppressPackageStartupMessages(library(tidyverse))
 
 
 newline <- "\n"
+divider <- "- - - - - - - "
 
 
 ```
@@ -40,8 +42,10 @@ newline <- "\n"
 
 ```{r chunk_name_1}
 
+
 iprint("Hello: ", newline=FALSE)
 iprint("World")
+
 
 ```
 
@@ -51,7 +55,29 @@ iprint("World")
 
 ```{r chunk_name_2}
 
+
 ## more code
+
+
+```
+
+
+
+
+
+
+
+\newpage
+
+
+
+## SCRATCH
+
+```{r SCRATCH-chunk, eval=FALSE}
+
+
+## ...
+
 
 ```
 

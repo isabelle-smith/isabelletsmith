@@ -12,7 +12,7 @@ output:
     toc_depth: 4
     code_folding: hide
     css: Izzy-Files/styles.css
-    template: Izzy-Files/default.html
+    template: Izzy-Files/005-default.html
 ---
 
 ```{r setup, warning=FALSE}
