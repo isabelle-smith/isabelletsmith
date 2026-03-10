@@ -32,7 +32,7 @@ render("file.Rmd", izzy_html())
 render("file.Rmd", izzy_html(toc=FALSE, toc_depth=5))
 
 ## different template name
-render("file.Rmd", izzy_html(default="007-default"))
+render("file.Rmd", izzy_html(default_name="007-default"))
 
 ## additional argumentss
 render("file.Rmd", izzy_html(code_folding="hide"))
