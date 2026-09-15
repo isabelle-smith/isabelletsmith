@@ -1,2 +1,9 @@
 ^isabelletsmith\.Rproj$
 ^\.Rproj\.user$
+^[0-9]{3}-skeleton.html$
+^Icon?$
+Icon
+Icon\r
+^Izzy-Files$
+^OLD-.*\.R$
+^LICENSE\.md$

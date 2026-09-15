@@ -26,14 +26,14 @@ those and any additional args into \code{\link[rmarkdown:html_document]{rmarkdow
 }
 \examples{
 ## base case
-render("file.Rmd", izzy_html())
+# rmarkdown::render("file.Rmd", izzy_html())
 
 ## changing TOC defaults
-render("file.Rmd", izzy_html(toc=FALSE, toc_depth=5))
+# rmarkdown::render("file.Rmd", izzy_html(toc=FALSE, toc_depth=5))
 
 ## different template name
-render("file.Rmd", izzy_html(default_name="007-default"))
+# rmarkdown::render("file.Rmd", izzy_html(default_name="007-default"))
 
 ## additional argumentss
-render("file.Rmd", izzy_html(code_folding="hide"))
+# rmarkdown::render("file.Rmd", izzy_html(code_folding="hide"))
 }
