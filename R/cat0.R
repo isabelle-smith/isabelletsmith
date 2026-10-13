@@ -15,6 +15,8 @@
 #' @returns None (invisible NULL).
 #' #export
 #'
+#' @seealso [cat()]
+#'
 #' @examples
 #' #cat(letters)
 #' #cat("\n")
