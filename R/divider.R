@@ -1,15 +1,53 @@
 
 
-#' String Divider for Printing
+## IZzy Smith; 2026
+
+
+########################################################################################################################
+
+
+#' Divider for Printing
 #'
-#' @param length_out Numeric value, greater than 0.
-#' @param char_str Optional. String.
-#' @param spac_str Optional. String.
+#' Returns a string divider in the format A(BA...). See **Details** for how the divider's length is calculated.
 #'
-#' @returns
+#' @param length_out Numeric (value < 0). Desired minimum length of divider.
+#' @param char_str *Optional.* String. Part A of alternating pattern. Defaults to `"-"`.
+#' @param spac_str *Optional.* String. Part B of alternating pattern. Defaults to `" "`.
+#'
+#' @returns String divider, beginning (and ending with `char_str`). The divider length
+#'  will always be greater than both `length_out` and the length of `char_str`.
+#'
+#' @details
+#' The divider is built as `A + n(BA)`
+#'  where `n = ceiling( (L - nchar(A)) / nchar(A+B) )`
+#'  with `L` corresponding to `length_out`.
+#'
+#'
 #' @export
 #'
 #' @examples
+#'
+#' ## Basic Examples:
+#'
+#' cat(divider(7), "\n") ## gives `- - - -`
+#'
+#' cat("Header:", "\n", divider(7), "\n", "results, description, etc.")
+#'
+#' cat(divider(7, char_str="*"), "\n")
+#' cat(divider(7, char_str="*", spac_str="_"), "\n")
+#'
+#'
+#' ## Variable Lengths:
+#'
+#' cat(divider(6, char_str="*", spac_str="_"), "\n")
+#' cat(divider(7, char_str="*", spac_str="_"), "\n") ## same length as above
+#'
+#' cat(divider(5, char_str="**", spac_str="_"), "\n")
+#' cat(divider(6, char_str="**", spac_str="_"), "\n") ## longer than above
+#' cat(divider(7, char_str="**", spac_str="_"), "\n") ## same length as above
+#' cat(divider(8, char_str="**", spac_str="_"), "\n") ## ...
+#' cat(divider(9, char_str="**", spac_str="_"), "\n") ## even longer
+#'
 
 # --------------------------------------
 
