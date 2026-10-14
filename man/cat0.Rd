@@ -25,3 +25,6 @@ Concatenate and Print without Spaces
 
 
 }
+\seealso{
+\code{\link[=cat]{cat()}}
+}
