@@ -16,11 +16,11 @@
 #'
 #' @returns A string that is the bijective base-26 representation of the input number,
 #'    or `NA_character_` for non-positive input.
+#'
 #' @export
 #'
 #' @details
 #' Non-integers are rounded by `floor(num + 0.5)` (see *References*), then converted using [as.integer()].
-#'
 #'
 #' @references
 #' 1. Credit for the rounding method goes to Stack Overflow user "flodel" (1201032).
@@ -35,18 +35,18 @@
 #'
 #' @examples
 #' ## basic use:
-#' fn_num_to_hex(1)    ## "A"
-#' fn_num_to_hex(26)   ## "Z"
-#' fn_num_to_hex(27)   ## "AA"
+#' num_to_hex(1)    ## "A"
+#' num_to_hex(26)   ## "Z"
+#' num_to_hex(27)   ## "AA"
 #'
 #' ## non-positives:
-#' fn_num_to_hex(0)    ## NA
-#' fn_num_to_hex(-1)   ## NA
+#' num_to_hex(0)    ## NA
+#' num_to_hex(-1)   ## NA
 #'
 #' ## rounding:
-#' fn_num_to_hex(8.75)  ## "I"
+#' num_to_hex(8.75)  ## "I"
 #' floor(8.75 + 0.5)    ## 9
-#' fn_num_to_hex(9)     ## "I"
+#' num_to_hex(9)     ## "I"
 #'
 
 

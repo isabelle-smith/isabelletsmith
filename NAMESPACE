@@ -3,3 +3,4 @@
 export(divider)
 export(iprint)
 export(izzy_html)
+export(num_to_hex)
